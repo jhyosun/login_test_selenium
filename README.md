@@ -1,4 +1,5 @@
 # Selenium 활용 로그인 테스트
+![image.png](login.JPG)
 
 ### 🔹 개요
 
