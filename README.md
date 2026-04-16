@@ -3,7 +3,7 @@
 
 ### 🔹 개요
 
- Selenium과 Pytest를 활용하여 로그인/로그아웃 기능을 자동화하였고, POM 구조와 데이터 기반 테스트를 적용해 유지보수 가능한 자동화 테스트 기반을 구현했.
+ Selenium과 Pytest를 활용하여 로그인/로그아웃 기능을 자동화하였고, POM 구조와 데이터 기반 테스트를 적용해 유지보수 가능한 자동화 테스트 기반을 구현했다.
 
 ---
 
@@ -62,7 +62,7 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 
 ![image.png](image%202.png)
 
-👉 Selenium의 명시적 대기(`WebDriverWait`)를 활용하여 요소가 로드될 때까지 기다린 후 안정적으로 동작하도록 구현했습니다.
+👉 Selenium의 명시적 대기(`WebDriverWait`)를 활용하여 요소가 로드될 때까지 기다린 후 안정적으로 동작하도록 구현했다.
 
 ---
 
@@ -84,7 +84,7 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 
 ![image.png](image%207.png)
 
-👉 parameterize를 사용하여 여러 로그인 케이스를 하나의 테스트 구조로 처리할 수 있게 구현하였다.
+👉 parameterize를 사용하여 여러 로그인 케이스를 하나의 테스트 구조로 처리할 수 있게 구현했다.
 
 ---
 
@@ -95,7 +95,7 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 - 잘못된 비밀번호 입력 시 비밀번호 오류 메시지가 출력됨
 - 로그인 후 로그아웃 시 로그아웃 완료 메시지가 출력되고 `/login` 페이지로 이동함
 
-👉 페이지 객체, 공통 fixture, 데이터 기반 테스트 구조로 나누어 작성함으로써 재사용성과 가독성을 높인 자동화 구조를 구현하였다.
+👉 페이지 객체, 공통 fixture, 데이터 기반 테스트 구조로 나누어 작성함으로써 재사용성과 가독성을 높인 자동화 구조를 구현했다.
 
 ---
 
