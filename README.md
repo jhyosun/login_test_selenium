@@ -81,6 +81,7 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 
 
 ![image.png](image%205.png)
+<img width="851" height="293" alt="image" src="https://github.com/user-attachments/assets/2504f8a8-4902-4901-a42d-12328d3e2fb4" />
 
 ![image.png](image%206.png)
 
