@@ -76,7 +76,9 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 
 #### 📝 테스트 코드 작성
 
-![image.png](image%204.png)
+
+<img width="891" height="546" alt="image" src="https://github.com/user-attachments/assets/1cac044b-4176-40ff-befb-84f4b10181d9" />
+
 <img width="924" height="339" alt="image" src="https://github.com/user-attachments/assets/a6f60cfc-bf0e-403c-8c57-f63156268e86" />
 
 
