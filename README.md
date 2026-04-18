@@ -101,9 +101,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC    # 이름이 길어서 별칭으로 EC
 ```
 
-![image.png](images/image%201.png)
+![image.png](images/image1.png)
 
-![image.png](images/image%202.png)
+![image.png](images/image2.png)
 
 👉 Selenium의 명시적 대기(`WebDriverWait`)를 활용하여 요소가 로드될 때까지 기다린 후 안정적으로 동작하도록 구현했다.
 
@@ -111,7 +111,7 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 
 #### 🔎 공통 실행 환경 구성
 
-![image.png](images/image%203.png)
+![image.png](images/image3.png)
 
 👉`conftest.py`에서 Pytest fixture를 사용해 WebDriver 생성 코드를 공통화하였다. 테스트마다 driver 생성 코드를 반복하지 않도록 하였고, 실행 옵션 변경도 한 곳에서 관리할 수 있게 만들었다.
 
@@ -126,7 +126,7 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 <img width="924" height="339" alt="image" src="https://github.com/user-attachments/assets/a6f60cfc-bf0e-403c-8c57-f63156268e86" />
 
 
-![image.png](images/image%205.png)
+![image.png](images/image5.png)
 
 
 <img width="851" height="293" alt="image" src="https://github.com/user-attachments/assets/2504f8a8-4902-4901-a42d-12328d3e2fb4" />
@@ -138,10 +138,9 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 <img width="904" height="355" alt="image" src="https://github.com/user-attachments/assets/1249f545-09a8-4af0-9e8c-28a5c0282d03" />
 
 
-![image.png](images/image 6.png)
+![image.png](images/image6.png)
 
-
-![image.png](images/image 7.png)
+![image.png](images/image7.png)
 
 
 👉 정상적인 로그인, 로그아웃, 로그인 실패를 진행하고 테스트 케이스로 만든 여러 로그인 케이스를 `parameterize`를 사용하여 하나의 테스트 구조로 처리할 수 있게 구현했다.
