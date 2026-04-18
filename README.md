@@ -41,11 +41,15 @@
 
 ---
 
-### 🔹 자동화 수행 과정
+### 🔹 테스트 설계
 
 #### 📂 Page Object Model(POM) 폴더 구조
 
 ![image.png](images/image.png)
+ 
+---
+
+### 🔹 자동화 구현 과정
 
 #### 🔎 페이지 객체 설계
 
