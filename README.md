@@ -45,7 +45,41 @@
 
 #### 📂 Page Object Model(POM) 폴더 구조
 
+
+1. 설계 방식
+
+테스트는 Page Object Model(POM) 구조를 기반으로 설계하였다.
+
 ![image.png](images/image.png)
+
+2. 테스트 관점
+ - 기능 관점
+  사용자가 로그인/로그아웃을 정상 수행할 수 있는가
+ - 입력값 검증 관점
+  잘못된 입력값에 대해 적절한 에러 메시지가 출력되는가
+ - 화면 전이 관점
+  로그인 성공/실패에 따라 URL이 기대한 화면으로 이동하는가 
+ - 사용자 경험 관점
+  시스템이 플래시 메시지로 결과를 명확히 전달하는가
+
+3. 테스트 시나리오
+  1. 정상 로그인
+        - 올바른 아이디와 비밀번호 입력
+        - 로그인 버튼 클릭
+        - 성공 메시지 확인
+        - /secure URL 이동 확인
+  2. 잘못된 아이디 로그인
+        - 잘못된 이메일 입력 (@대신 다른 특수문자 사용, 빈칸 입력 등)
+        - "이메일 형식 오류" 메시지 확인
+  3. 비밀번호 조건 미충족
+        - 짧은 비밀번호, 영어만 입력
+        - 조건 미충족 메시지 확인
+  4. 비밀번호 불일치
+        - 비밀번호 ≠ 비밀번호 확인
+        - 오류 메시지 확인 
+  5. 필수값 누락
+        - 이메일 또는 비밀번호 미입력
+        - 필수 입력 메시지 확인
  
 ---
 
@@ -83,19 +117,27 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 
 <img width="891" height="546" alt="image" src="https://github.com/user-attachments/assets/1cac044b-4176-40ff-befb-84f4b10181d9" />
 
+
 <img width="924" height="339" alt="image" src="https://github.com/user-attachments/assets/a6f60cfc-bf0e-403c-8c57-f63156268e86" />
+
 
 ![image.png](images/image%205.png)
 
+
 <img width="851" height="293" alt="image" src="https://github.com/user-attachments/assets/2504f8a8-4902-4901-a42d-12328d3e2fb4" />
+
 
 <img width="827" height="259" alt="image" src="https://github.com/user-attachments/assets/8313c0d9-3ced-416e-8b64-368913d190be" />
 
+
 <img width="904" height="355" alt="image" src="https://github.com/user-attachments/assets/1249f545-09a8-4af0-9e8c-28a5c0282d03" />
+
 
 ![image.png](images/image%206.png)
 
+
 ![image.png](images/image%207.png)
+
 
 👉 정상적인 로그인, 로그아웃, 로그인 실패를 진행하고 테스트 케이스로 만든 여러 로그인 케이스를 `parameterize`를 사용하여 하나의 테스트 구조로 처리할 수 있게 구현했다.
 
