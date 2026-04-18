@@ -119,17 +119,13 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 
 #### 📝 테스트 코드 작성
 
+![image.png](images/image4.png)
 
-<img width="891" height="546" alt="image" src="https://github.com/user-attachments/assets/1cac044b-4176-40ff-befb-84f4b10181d9" />
-
-
-<img width="924" height="339" alt="image" src="https://github.com/user-attachments/assets/a6f60cfc-bf0e-403c-8c57-f63156268e86" />
-
+![image.png](images/image4-1.png)
 
 ![image.png](images/image5.png)
 
-
-<img width="851" height="293" alt="image" src="https://github.com/user-attachments/assets/2504f8a8-4902-4901-a42d-12328d3e2fb4" />
+![image.png](images/image5-1.png)
 
 ![image.png](images/image10.JPG)
 
