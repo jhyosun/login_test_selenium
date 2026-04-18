@@ -138,13 +138,20 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 <img width="904" height="355" alt="image" src="https://github.com/user-attachments/assets/1249f545-09a8-4af0-9e8c-28a5c0282d03" />
 
 
-![image.png](images/image%206.png)
+![image.png](images/image 6.png)
 
 
-![image.png](images/image%207.png)
+![image.png](images/image 7.png)
 
 
 👉 정상적인 로그인, 로그아웃, 로그인 실패를 진행하고 테스트 케이스로 만든 여러 로그인 케이스를 `parameterize`를 사용하여 하나의 테스트 구조로 처리할 수 있게 구현했다.
+
+---
+
+![image.png](images/image8.JPG)
+
+![image.png](images/image9.JPG)
+
 
 ---
 
