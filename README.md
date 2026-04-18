@@ -125,7 +125,7 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 
 ![image.png](images/image5.png)
 
-![image.png](images/image5-1.png)
+![image.png](images/image5-2.png)
 
 ![image.png](images/image10.JPG)
 
