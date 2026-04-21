@@ -138,7 +138,30 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 
 ![image.png](images/image11.png)
 
-![image.png](images/image6.png)
+
+
+```python
+LOGIN_CASES = [
+    ("tomsmith","SuperSecretPassword!", "You logged into a secure area!", "/secure"),
+    ("smith","SuperSecretPassword!", "Your username is invalid!", "/login"),
+    (" ","SecretPassword!", "Your username is invalid!", "/login"),              # 아이디 공백
+    ("tomsmith@!","SecretPassword!", "Your username is invalid!", "/login"),     # 아이디 특수문자 입력
+    ("tomsmith"," ", "Your password is invalid!", "/login"),                     # 아이디만 입력    
+    ("tomsmith","SecretPassword!", "Your password is invalid!", "/login"),    
+    (" tomsmith "," SecretPassword! ", "Your username is invalid!", "/login"),   # 앞 뒤 공백
+]
+
+@pytest.mark.parametrize("username, password, expected_text, url",LOGIN_CASES)
+def test_login(driver, username, password, expected_text, url):
+    page = LoginPage(driver, 10)
+    page.open()
+    page.login(username, password)
+    flash_msg = page.get_flash_message()
+
+
+    assert expected_text in flash_msg
+    assert url in page.get_current_url()
+```
 
 ![image.png](images/image7.png)
 
