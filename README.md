@@ -141,6 +141,7 @@ from selenium.webdriver.support import expected_conditions as EC    # 이름이 
 
 
 ```python
+# 테스트 케이스
 LOGIN_CASES = [
     ("tomsmith","SuperSecretPassword!", "You logged into a secure area!", "/secure"),
     ("smith","SuperSecretPassword!", "Your username is invalid!", "/login"),
