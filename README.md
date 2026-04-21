@@ -85,6 +85,13 @@
         - 로그아웃 버튼 클릭
         - 로그아웃 완료 메시지 확인
         - /login URL 이동 확인
+
+
+---
+
+### 🔹 테스트 케이스
+
+![image.png](images/testcase_login.JPG)
  
 ---
 
