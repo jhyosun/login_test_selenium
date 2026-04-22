@@ -91,7 +91,7 @@
 
 ### 🔹 테스트 케이스
 
-![image.png](images/testcase_login1.JPG)
+![image.png](images/testcase_login.JPG)
  
 ---
 
