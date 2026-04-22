@@ -176,6 +176,17 @@ def test_login(driver, username, password, expected_text, url):
 ![image.png](images/image9.JPG)
 
 
+
+---
+
+### 🔹 결함 리포트
+
+![image.png](images/bug_report_login.JPG)
+
+| BUG_001 | BUG_002 |
+|---|---|
+| ![](images/bug1.JPG) | ![](images/bug2.JPG) |
+
 ---
 
 ### 🔹 결과
